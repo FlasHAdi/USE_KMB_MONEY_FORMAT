@@ -8,7 +8,7 @@ import constInfo
 
 # Add below
 			if constInfo.USE_MONEY_K_FORMAT:
-				if 'k' in money_text:
+				if 'k' in money_text or 'K' in money_text::
 					money_text = str(constInfo.FormatMoneyToK(money_text))
 
 
@@ -18,5 +18,5 @@ import constInfo
 
 # Add below
 			if constInfo.USE_MONEY_K_FORMAT:
-				if 'k' in text:
+				if 'k' in text or 'K' in text::
 					text = str(constInfo.FormatMoneyToK(text))
