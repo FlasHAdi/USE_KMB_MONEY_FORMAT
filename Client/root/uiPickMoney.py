@@ -8,9 +8,11 @@ import constInfo
 
 # Add below
 			if constInfo.USE_MONEY_K_FORMAT:
-				if 'k' in money_text or 'K' in money_text:
-					money_text = str(constInfo.FormatMoneyToK(money_text))
-
+				if money_text:
+					moneyValue = min(constInfo.__ConvertMoneyText(text), self.maxValue)
+					if moneyValue:
+						if self.eventAccept:
+							self.eventAccept(moneyValue)
 
 ''' 3. '''
 # Search @ def OnAccept
@@ -18,5 +20,8 @@ import constInfo
 
 # Add below
 			if constInfo.USE_MONEY_K_FORMAT:
-				if 'k' in text or 'K' in text:
-					text = str(constInfo.FormatMoneyToK(text))
+				if text:
+					moneyValue = min(constInfo.__ConvertMoneyText(text), self.maxValue)
+					if moneyValue:
+						if self.eventAccept:
+							self.eventAccept(moneyValue)
