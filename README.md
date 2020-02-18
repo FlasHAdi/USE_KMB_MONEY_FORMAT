@@ -1,2 +1,4 @@
 # USE_MONEY_K_FORMAT
-Input money string with K format in exchange window
+Format money string value in thousands, millions or billions.
+
+_Using Vega's method._
