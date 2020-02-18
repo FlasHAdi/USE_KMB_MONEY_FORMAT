@@ -1,8 +1,8 @@
 ''' 1. '''
 # Add
-USE_MONEY_K_FORMAT = True
+USE_KMB_MONEY_FORMAT = True
 
-if USE_MONEY_K_FORMAT:
+if USE_KMB_MONEY_FORMAT:
 	def __ConvertMoneyText(self, text, powers = dict(k = 10**3, m = 10**6, b = 10**9)):
 		"""
 		Format string value in thousands, millions or billions.
