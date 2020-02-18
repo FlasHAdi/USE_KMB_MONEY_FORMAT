@@ -7,7 +7,7 @@ import constInfo
 			money_text = self.pickValueEditLine.GetText()
 
 # Add below
-			if constInfo.USE_MONEY_K_FORMAT:
+			if constInfo.USE_KMB_MONEY_FORMAT:
 				if money_text:
 					moneyValue = min(constInfo.__ConvertMoneyText(text), self.maxValue)
 					if moneyValue:
@@ -19,7 +19,7 @@ import constInfo
 			text = self.pickValueEditLine.GetText()
 
 # Add below
-			if constInfo.USE_MONEY_K_FORMAT:
+			if constInfo.USE_KMB_MONEY_FORMAT:
 				if text:
 					moneyValue = min(constInfo.__ConvertMoneyText(text), self.maxValue)
 					if moneyValue:
